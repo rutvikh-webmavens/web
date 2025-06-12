@@ -34,3 +34,7 @@ Route::resource('categories','App\Http\Controllers\CategoryController');
 Route::resource('products','App\Http\Controllers\products');
 
 //second cahnge for testing
+
+    // Test
+    Route::delete('tests/destroy', 'TestController@massDestroy')->name('tests.massDestroy');
+    Route::resource('tests', 'TestController');
